@@ -6,12 +6,12 @@ from scipy.stats import linregress
 import numpy as np
 from collections import Counter
 
-#with open('players_20.csv', newline='') as csvfile:
-    #data = csv.DictReader(csvfile)
-    #print("OVERALL NAME AGE VALUE SKILL")
-    #print("---------------------------------")
-    #for row in data:
-        #print(row['overall'],row['short_name'], row['age'])
+with open('players_20.csv', newline='') as csvfile:
+    data = csv.DictReader(csvfile)
+    print("OVERALL NAME AGE VALUE SKILL")
+    print("---------------------------------")
+    for row in data:
+        print(row['overall'],row['short_name'], row['age'])
 
 #Read csv file and convert to DataFrame
 data = pd.read_csv('players_20.csv')
